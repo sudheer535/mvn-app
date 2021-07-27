@@ -15,6 +15,17 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+<distributionManagement>
+	<snapshotRepository>
+		<id>nexus</id>
+		<url>http://18.189.43.78:8081/repository/mvn-app-snapshot/</url>
+		</snapshotRepository>
+		
+	<repository>
+		<id>nexus</id>
+	        <url>http://18.189.43.78:8081/repository/mvn-app-release/</url>
+		</repository>
+  	</distributionManagement>
   <build>
     <finalName>mvn-app</finalName>
   </build>
